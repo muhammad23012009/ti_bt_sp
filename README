@@ -48,8 +48,8 @@ BTS NAMING FORMAT
   6.7.16 	= 	CC256xB Product, 7.16 ROM Version
   7.6.15 	= 	WL127x Product, 6.15 ROM Version
   10.6.15 	= 	WL128x, 6.15 ROM Version
-  11.8.32 	= 	WL185x PG1.1, 8.32 ROM Version
-  12.8.32 	= 	WL189x PG1.1, 8.32 ROM Version
+  11.8.32 	= 	WL180x, WL183x, WL185x PG1.1, 8.32 ROM Version
+  12.8.32 	= 	WL187x PG1.1, 8.32 ROM Version
   12.10.28 	= 	WL18xxQ PG1.11, 10.28 ROM Version
   
   Exception is the initialization files of CC256xA/B devices which are 
