@@ -53,12 +53,11 @@ BTS NAMING FORMAT
   12.10.28 	= 	WL18xxQ PG1.11, 10.28 ROM Version
   
   Exception is the initialization files of CC256xA/B devices which are 
-  provided as three separate bts files. M and N letters represent the patch
-  SW version:
+  provided as three separate bts files: 
   
-  bluetooth_init_cc256x_M.N.bts - BT main bts file 
-  BLE_init_cc256x_M.N.bts - BLE functionality add-on
-  AVPR_init_cc256x_M.N.bts - AVPR (WBS, Assisted A2DP) functionality add-On
+  TIInit_6.7.16_bt_spec_4.x.bts - BT main bts file 
+  TIInit_6.7.16_ble_add-on.bts - BLE functionality add-on
+  TIInit_6.7.16_avpr_add-on.bts - AVPR (WBS, Assisted A2DP) functionality add-On
   
   For additional details, please refer to: 
   http://processors.wiki.ti.com/index.php/CC256x_Downloads
