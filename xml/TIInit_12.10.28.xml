@@ -94,6 +94,12 @@
 	</Param>
 </Type>
 
+<Values name="WLAN_AFH_MAP_POLICY" type="enum">
+	<Value val="0x00">give low priority to WLAN reported map</Value>
+	<Value val="0x01">give high priority to WLAN reported map</Value>
+	<Value val="0x02">ignore WLAN reported map</Value>
+</Values>
+
 <Packet name="ve" type="ve" typemask="0x00000002">
 	<Param type="u" size="1">
 		<Name>Layer</Name>
@@ -17271,10 +17277,11 @@
 	</Param>
 </Command>
 
+
 <Command name="HCI_VS_DRP_Read_BER_Meter_Status" type="sc" opcode="0xFE2A">
 	<Param type="o" size="2">
 		<Name>Opcode</Name>
-		<Default>0xFD5B</Default>
+		<Default>0xFE2A</Default>
 		<Desc>HCIPP Read DRP BER Meter Status</Desc>
 	</Param>
 	<Param type="R">
@@ -17318,24 +17325,24 @@
 		<Desc>Number of packet received in current test</Desc>
 	</Param>
 </Command>
-
-<Command name="HCI_VS_DRP_Reset_BER_Meter" type="sc" opcode="0xFE29">
-	<Param type="o" size="2">
-		<Name>Opcode</Name>
-		<Default>0xFE29</Default>
-		<Desc>HCIPP Reset DRP BER Meter</Desc>
-	</Param>
-	<Param type="R">
-		<Name>HCI_Command_Complete_Event</Name>
-		<Default />
-		<Desc />
-	</Param>
-	<Param type="u" size="1" valtype="Status">
-		<Name>Status</Name>
-		<Default>0x00</Default>
-		<Desc>0 - success, 1 - illegal command</Desc>
-	</Param>
-</Command>
+  
+  <Command name="HCI_VS_DRP_Reset_BER_Meter" type="sc" opcode="0xFE29">
+        <Param type="o" size="2">
+            <Name>Opcode</Name>
+            <Default>0xFE29</Default>
+            <Desc>HCIPP Reset DRP BER Meter</Desc>
+        </Param>
+        <Param type="R">
+            <Name>HCI_Command_Complete_Event</Name>
+            <Default />
+            <Desc />
+        </Param>
+        <Param type="u" size="1" valtype="Status">
+            <Name>Status</Name>
+            <Default>0x00</Default>
+            <Desc>0 - success, 1 - illegal command</Desc>
+        </Param>
+    </Command>
 
 <Command name="HCI_VS_DRPb_BER_Meter_Start" type="sc" opcode="0xFD8B">
 	<Param type="o" size="2">
