@@ -16911,6 +16911,49 @@
         </Param>
     </Command>
     
+	<Command name="HCI_VS_Clock_Set_Timeout" type="vc" opcode="0xFE24">
+        <Param type="o" size="2">
+            <Name>Opcode</Name>
+            <Default>0xFE24</Default>
+            <Desc></Desc>
+        </Param>
+        <Param type="u" size="1">
+            <Name>Mode</Name>
+            <Default>1</Default>
+            <Desc>0 = Stop timer;
+				  1 = start timer once
+				  2 = start timer periodic </Desc>
+        </Param>
+       <Param type="u" size="4">
+            <Name>Timeout</Name>
+            <Default>1000</Default>
+            <Desc>Time in Msec</Desc>
+        </Param>
+       <Param type="R">
+            <Name>HCI_Command_Complete_Event</Name>
+            <Default />
+            <Desc />
+        </Param>
+   </Command>
+ 
+    <Command name="HCI_VS_Clock_Set_Timeout_Event" type="ve" opcode="0x0600">
+        <Param type="t">
+            <Name>Timeout</Name>
+            <Default>10000</Default>
+            <Desc>Timeout in msec</Desc>
+        </Param>
+        <Param type="o" size="2">
+            <Name>Opcode</Name>
+            <Default>0x0600</Default>
+            <Desc>Opcode</Desc>
+        </Param>
+        <Param type="u" size="1" valtype="Status">
+            <Name>Status</Name>
+            <Default>0x00</Default>
+            <Desc>Status</Desc>
+        </Param>
+     </Command>
+ 
     <!-- ================================================================== -->
     <Command name="ACL" type="gb" />
     <!-- ================================================================== -->
