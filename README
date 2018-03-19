@@ -50,8 +50,8 @@ BTS NAMING FORMAT
   7.6.15    =   WL127x Product, 6.15 ROM Version
   10.6.15   =   WL128x, 6.15 ROM Version
   11.8.32   =   WL180x, WL183x, WL185x - PG2.1 or PG2.2, 8.32 ROM Version
-  12.8.32   =   WL180xQ, WL183xQ, WL185xQ - PG2.1 or PG2.2, 8.32 ROM Version
-  12.10.28 	=   WL187xQ, WL189xQ - PG1.11, 10.28 ROM Version
+  12.8.32   =   WL187x - PG2.1 or PG2.2, 8.32 ROM Version
+  12.10.28  =   WL18xxQ - PG1.11, 10.28 ROM Version
   
   Exceptions are the initialization files of CC256xB/C devices which are also
   provided as three separate bts files: 
